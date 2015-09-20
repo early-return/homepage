@@ -1,0 +1,110 @@
+body{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF;
+}
+#back-block{
+	width: 100%;
+	min-width: 800px;
+	height: 280px;
+	background-color: #E1E8E5;
+	position: absolute;
+	top: 200px;
+	z-index: -1000;
+}
+#content{
+	width: 700px;
+	height: auto;
+	margin: 80px auto 20px auto;
+}
+	#content-left{
+		width: 300px;
+		float: left;
+	}
+		#logo{
+			display: block;
+		}
+		#menu{
+			list-style: none;
+			position: absolute;
+			top: 240px;
+		}
+			#menu li a{
+				display: block;
+				color: #333;
+				width: 180px;
+				height: 40px;
+				line-height: 40px;
+				font-size: 16px;
+				text-align: right;
+				text-decoration: none;
+				padding-right: 20px;
+				margin: 10px 0;
+				background-color: rgba(198,211,205,0.5);
+				transition: background-color .2s linear;
+				-webkit-transition: background-color .2s linear;
+				-moz-transition: background-color .2s linear;
+				-o-transition: background-color .2s linear;
+			}
+			#menu li a:hover{
+				background-color: rgba(150,171,165,0.5);
+			}
+
+	#content-right{
+		width: 400px;
+		float: left;
+		text-align: right;
+	}
+		#drawing-board{
+			width: 400px;
+			height: 225px;
+			position: absolute;
+			top: 120px;
+			background-color: #FFF;
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+		}
+		#links{
+			width: 390px;
+			height: 60px;
+			position: absolute;
+			top: 380px;
+			background-color: rgba(198,211,205,0.5);
+			font-size: 14px;
+			line-height: 30px;
+			color: #333;
+			padding-right: 10px;
+			transition: background-color .2s linear;
+			-webkit-transition: background-color .2s linear;
+			-moz-transition: background-color .2s linear;
+			-o-transition: background-color .2s linear;
+		}
+			#links a{
+				color: #888;
+				text-decoration: none;
+			}
+			#links a [class^="icon-"], #links a [class*=" icon-"]{
+				font-size: 18px;
+			}
+			#links .icon-google-plus:hover{
+				color: #dc4a36;
+			}
+			#links .icon-github:hover{
+				color: #4183c4;
+			}
+			#links .icon-twitter:hover{
+				color: #55acee;
+			}
+		#links:hover{
+			background-color: rgba(150,171,165,0.5);
+		}
+		#footer{
+			width: 400px;
+			position: absolute;
+			top: 520px;
+			font-size: 14px;
+			color: #888;
+		}
+		#footer a{
+			color: #888;
+		}
